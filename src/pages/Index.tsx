@@ -11,10 +11,6 @@ import { TPointTechSlide } from "@/components/slides/TPointTechSlide";
 import { AIEntityExtractionSlide } from "@/components/slides/AIEntityExtractionSlide";
 import { FMIFacilitySlide } from "@/components/slides/FMIFacilitySlide";
 import { BespinLabsSlide } from "@/components/slides/BespinLabsSlide";
-import { CaseStudyIntroSlide } from "@/components/slides/CaseStudyIntroSlide";
-import { ProblemRequirementsSlide } from "@/components/slides/ProblemRequirementsSlide";
-import { WhatWeBuiltSlide } from "@/components/slides/WhatWeBuiltSlide";
-import { TechStackSlide } from "@/components/slides/TechStackSlide";
 import { TeamStructureSlide } from "@/components/slides/TeamStructureSlide";
 import { TimelineSlide } from "@/components/slides/TimelineSlide";
 import { TimelinePhase2Slide } from "@/components/slides/TimelinePhase2Slide";
@@ -34,14 +30,10 @@ const Index = () => {
     { id: 10, component: <AIEntityExtractionSlide /> },
     { id: 11, component: <FMIFacilitySlide /> },
     { id: 12, component: <BespinLabsSlide /> },
-    { id: 13, component: <CaseStudyIntroSlide /> },
-    { id: 14, component: <ProblemRequirementsSlide /> },
-    { id: 15, component: <WhatWeBuiltSlide /> },
-    { id: 16, component: <TechStackSlide /> },
-    { id: 17, component: <TeamStructureSlide /> },
-    { id: 18, component: <TimelineSlide /> },
-    { id: 19, component: <TimelinePhase2Slide /> },
-    { id: 20, component: <ThankYouSlide /> },
+    { id: 13, component: <TeamStructureSlide /> },
+    { id: 14, component: <TimelineSlide /> },
+    { id: 15, component: <TimelinePhase2Slide /> },
+    { id: 16, component: <ThankYouSlide /> },
   ];
 
   return <Presentation slides={slides} />;
