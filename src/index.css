@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 203 100% 17%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 203 100% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 203 100% 17%;
+
+    /* WGU Navy Blue */
+    --primary: 203 100% 17%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Jellyfish Teal */
+    --secondary: 181 55% 46%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 181 55% 46%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 203 100% 17%;
+
+    --radius: 0.5rem;
+
+    /* Presentation specific colors */
+    --slide-bg: 0 0% 100%;
+    --slide-text: 203 100% 17%;
+    --nav-active: 181 55% 46%;
+    --nav-inactive: 215 20% 65%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 203 100% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 203 100% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 203 100% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 181 55% 46%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 203 100% 17%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 203 50% 20%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 181 55% 46%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 203 50% 20%;
+    --input: 203 50% 20%;
+    --ring: 181 55% 46%;
+
+    --slide-bg: 203 100% 12%;
+    --slide-text: 0 0% 98%;
+    --nav-active: 181 55% 46%;
+    --nav-inactive: 203 30% 40%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
